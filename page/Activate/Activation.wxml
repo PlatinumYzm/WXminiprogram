@@ -1,0 +1,17 @@
+<!--page/Activate/Activation.wxml-->
+<view class="container page">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+
+  <view class='search'>
+    <view class='searchItem'>
+    <title>序列号</title>
+    <input placeholder='手动输入16位序列号' maxlength='16' confirm-type='send' ></input>
+    </view>
+  </view>
+</view>

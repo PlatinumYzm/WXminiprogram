@@ -1,0 +1,52 @@
+/* page/QR/Key.wxss */
+
+page{
+    background-color: #789;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  padding-top: 100rpx;
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: stretch;
+  box-sizing: border-box;
+  width: 710rpx;
+  margin-top: 40rpx;
+  border-radius: 10rpx;
+  background-color: #fff;
+}
+
+.header {
+  height: 140rpx;
+  background-color: #f0f0f0;
+  border-radius: 10rpx 10rpx 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.qrcode {
+  height: 600rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.qrcode > canvas {
+  width: 600rpx;
+  height: 600rpx;
+}

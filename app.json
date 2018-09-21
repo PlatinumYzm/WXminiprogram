@@ -1,0 +1,34 @@
+{
+  "pages": [
+    "page/QR/Unlock",
+    "page/QR/Key",
+    "page/Activate/Activation"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "backgroundColor":"#eeeeee",
+    "navigationBarBackgroundColor": "#789",
+    "navigationBarTitleText": "二步验证Demo",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "color": "#789",
+    "selectedColor": "#4BC270",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "position":"bottom",
+    "list": [{
+      "pagePath": "page/QR/Unlock",
+      "text": "解锁",
+      "iconPath": "image/scan.png",
+      "selectedIconPath": "image/scan_sd.png"
+    },
+    {
+      "pagePath":"page/QR/Key",
+      "text":"密钥",
+      "iconPath":"image/QRCode.png",
+      "selectedIconPath":"image/QRCode_sd.png"
+    }]
+  }
+}
